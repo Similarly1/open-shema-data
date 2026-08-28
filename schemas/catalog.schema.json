@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OpenShemaCatalog",
+  "description": "Schéma de validation officiel pour le catalogue de données Open Shema.",
+  "type": "object",
+  "required": ["catalog_version", "name", "updated_at", "modules"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "catalog_version": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "repository": { "type": "string", "format": "uri" },
+    "cdn_base_url": { "type": "string", "format": "uri" },
+    "updated_at": { "type": "string" },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "icon": { "type": "string" }
+        }
+      }
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "title",
+          "language",
+          "format",
+          "version",
+          "download_url"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "type": {
+            "type": "string",
+            "enum": ["bible", "dictionary", "commentary", "theology", "dataset", "cross_references", "maps"]
+          },
+          "category": { "type": "string" },
+          "title": { "type": "string" },
+          "abbreviation": { "type": "string" },
+          "language": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+          "format": { "type": "string", "enum": ["sqlite", "json", "sqlite.gz", "json.gz"] },
+          "size_bytes": { "type": "integer", "minimum": 0 },
+          "version": { "type": "string" },
+          "license": { "type": "string" },
+          "author": { "type": "string" },
+          "description": { "type": "string" },
+          "features": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "download_url": { "type": "string", "format": "uri" },
+          "checksum_sha256": { "type": "string" }
+        }
+      }
+    }
+  }
+}
