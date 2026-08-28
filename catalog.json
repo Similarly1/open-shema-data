@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T14:05:00Z",
+  "updated_at": "2026-08-28T14:30:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -47,6 +47,23 @@
       "features": ["strong", "indexed_search", "literal_translation"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/DARBY.png"
+    },
+    {
+      "id": "bible-ncl",
+      "type": "bible",
+      "category": "bibles",
+      "title": "Néo-Crampon Libre",
+      "abbreviation": "NCL",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 6590464,
+      "version": "1.0.0",
+      "license": "Creative Commons (CC-BY-SA 4.0)",
+      "author": "Augustin Crampon (Révision Fraternité de Tibériade)",
+      "description": "Révision linguistique et contemporaine de la traduction catholique intégrale (72 livres, Ancien & Nouveau Testament et livres deutérocanoniques) du Chanoine Augustin Crampon par la Fraternité de Tibériade sous licence ouverte Creative Commons.",
+      "features": ["deuterocanonical", "catholic_tradition", "contemporary_french", "indexed_search"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ncl.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/NCL.png"
     },
     {
       "id": "comm-calvin",
