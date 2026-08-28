@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T10:30:00Z",
+  "updated_at": "2026-08-28T13:40:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -18,7 +18,7 @@
       "id": "bible-lsg-1910",
       "type": "bible",
       "category": "bibles",
-      "title": "Louis Segond 1910 (avec Strong)",
+      "title": "Louis Segond 1910 (avec Strongs)",
       "abbreviation": "LSG",
       "language": "fr",
       "format": "sqlite",
@@ -26,7 +26,7 @@
       "version": "1.0.0",
       "license": "Public Domain",
       "author": "Louis Segond",
-      "description": "Texte biblique français classique de référence (66 livres, 31 171 versets) avec numérotation Strong complète (Hébreu & Grec).",
+      "description": "Bible Louis Segond 1910 avec numérotation Strong complète (Hébreu & Grec)",
       "features": ["strong", "indexed_search", "testaments_ot_nt"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite"
     },
