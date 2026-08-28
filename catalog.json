@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T16:52:00Z",
+  "updated_at": "2026-08-28T17:03:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -81,6 +81,23 @@
       "features": ["new_testament", "greek_critical_text", "protestant_reformed", "indexed_search"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_stapfer.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/STAPFER.png"
+    },
+    {
+      "id": "bible-septante-giguet-1872",
+      "type": "bible",
+      "category": "bibles",
+      "title": "La Sainte Bible d'après les Septante",
+      "abbreviation": "GIG",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 4149248,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "Pierre Giguet / Lethielleux",
+      "description": "La première et magistrale traduction française intégrale de l'Ancien Testament d'après la version des Septante (texte grec d'Alexandrie) réalisée par Pierre Giguet en 4 tomes (1872). Témoin capital du texte biblique cité par les auteurs du Nouveau Testament et les Pères de l'Église.",
+      "features": ["old_testament", "septuagint_lxx", "alexandrian_greek", "indexed_search"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_septante_giguet.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/GIG.png"
     },
     {
       "id": "bible-ncl",
