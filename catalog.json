@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T10:00:00Z",
+  "updated_at": "2026-08-28T10:30:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -14,6 +14,38 @@
     { "id": "datasets", "label": "Jeux de Données & Multimédias", "icon": "database" }
   ],
   "modules": [
+    {
+      "id": "bible-lsg-1910",
+      "type": "bible",
+      "category": "bibles",
+      "title": "Louis Segond 1910 (avec Strong)",
+      "abbreviation": "LSG",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 21045248,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "Louis Segond",
+      "description": "Texte biblique français classique de référence (66 livres, 31 171 versets) avec numérotation Strong complète (Hébreu & Grec).",
+      "features": ["strong", "indexed_search", "testaments_ot_nt"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite"
+    },
+    {
+      "id": "bible-darby",
+      "type": "bible",
+      "category": "bibles",
+      "title": "Bible J.N. Darby (avec Strong)",
+      "abbreviation": "DARBY",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 22319104,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "John Nelson Darby",
+      "description": "Traduction littérale et rigoureuse de John Nelson Darby (66 livres, 31 171 versets) avec balisage Strong complet.",
+      "features": ["strong", "indexed_search", "literal_translation"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite"
+    },
     {
       "id": "dataset-bibleproject-fr",
       "type": "dataset",
@@ -29,70 +61,6 @@
       "description": "Indexation complète des vidéos de panorama des 66 livres bibliques en français et liens HD vers les affiches littéraires.",
       "features": ["video_links", "posters", "summaries"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/bibleproject_fr.json"
-    },
-    {
-      "id": "bible-lsg-1910",
-      "type": "bible",
-      "category": "bibles",
-      "title": "Louis Segond 1910",
-      "abbreviation": "LSG",
-      "language": "fr",
-      "format": "sqlite",
-      "size_bytes": 4500000,
-      "version": "1.0.0",
-      "license": "Public Domain",
-      "author": "Louis Segond",
-      "description": "Texte biblique français de référence (Ancien et Nouveau Testament) du domaine public.",
-      "features": ["strong_ready", "testaments_ot_nt"],
-      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite"
-    },
-    {
-      "id": "dict-strong-fr",
-      "type": "dictionary",
-      "category": "dictionaries",
-      "title": "Dictionnaire des Racines Strong (Hébreu & Grec)",
-      "abbreviation": "STRONG-FR",
-      "language": "fr",
-      "format": "sqlite",
-      "size_bytes": 2200000,
-      "version": "1.0.0",
-      "license": "Public Domain",
-      "author": "James Strong (Adaptation FR)",
-      "description": "Lexique exhaustif avec numérotation Strong, translittération, lemmes originaux et définitions complètes en français.",
-      "features": ["hebrew_roots", "greek_roots", "transliteration"],
-      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/dictionaries/dict_strong_fr.sqlite"
-    },
-    {
-      "id": "comm-calvin-evangiles",
-      "type": "commentary",
-      "category": "commentaries",
-      "title": "Commentaires sur l'Harmonie Évangélique",
-      "abbreviation": "CALV-EV",
-      "language": "fr",
-      "format": "sqlite",
-      "size_bytes": 9500000,
-      "version": "1.0.0",
-      "license": "Public Domain",
-      "author": "Jean Calvin",
-      "description": "Commentaires détaillés verset par verset sur la concordance des Évangiles selon Matthieu, Marc et Luc.",
-      "features": ["verse_by_verse", "historical_commentary"],
-      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/commentaries/comm_calvin_evangiles.sqlite"
-    },
-    {
-      "id": "theology-confession-rochelle",
-      "type": "theology",
-      "category": "theology",
-      "title": "Confession de foi de La Rochelle (1559)",
-      "abbreviation": "CONF-ROCHELLE",
-      "language": "fr",
-      "format": "sqlite",
-      "size_bytes": 150000,
-      "version": "1.0.0",
-      "license": "Public Domain",
-      "author": "Synode de Paris / La Rochelle",
-      "description": "Les 40 articles de la confession de foi historique des Églises Réformées de France avec références bibliques associées.",
-      "features": ["articles", "scripture_references"],
-      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/theology/confession_rochelle_1559.sqlite"
     }
   ]
 }
