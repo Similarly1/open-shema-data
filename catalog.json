@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T16:15:00Z",
+  "updated_at": "2026-08-28T16:52:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -64,6 +64,23 @@
       "features": ["protestant_reformed", "textus_receptus", "historical_translation", "indexed_search"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ostervald.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/OST.png"
+    },
+    {
+      "id": "bible-stapfer-1889",
+      "type": "bible",
+      "category": "bibles",
+      "title": "Le Nouveau Testament (Traduction Edmond Stapfer)",
+      "abbreviation": "STAPFER",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 1429504,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "Edmond Stapfer (Librairie Fischbacher)",
+      "description": "Traduction historique du Nouveau Testament par le théologien protestant Edmond Stapfer (1889, Librairie Fischbacher). Traduit directement sur le texte grec comparé des meilleures éditions critiques de l'époque (Tischendorf, Westcott-Hort, Tregelles), offrant une langue soignée et une grande rigueur philologique.",
+      "features": ["new_testament", "greek_critical_text", "protestant_reformed", "indexed_search"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_stapfer.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/STAPFER.png"
     },
     {
       "id": "bible-ncl",
