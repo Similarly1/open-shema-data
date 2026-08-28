@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T14:30:00Z",
+  "updated_at": "2026-08-28T16:15:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -47,6 +47,23 @@
       "features": ["strong", "indexed_search", "literal_translation"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/DARBY.png"
+    },
+    {
+      "id": "bible-ostervald-1877",
+      "type": "bible",
+      "category": "bibles",
+      "title": "Bible J.F. Ostervald (1877)",
+      "abbreviation": "OST",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 5742592,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "Jean-Frédéric Ostervald",
+      "description": "Grande révision neuchâteloise du texte biblique français au style noble et majestueux, basée sur le Texte Massorétique et le Textus Receptus, pilier historique du protestantisme réformé francophone.",
+      "features": ["protestant_reformed", "textus_receptus", "historical_translation", "indexed_search"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ostervald.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/OST.png"
     },
     {
       "id": "bible-ncl",
