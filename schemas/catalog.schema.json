@@ -58,6 +58,7 @@
             "items": { "type": "string" }
           },
           "download_url": { "type": "string", "format": "uri" },
+          "cover_url": { "type": "string", "format": "uri" },
           "checksum_sha256": { "type": "string" }
         }
       }

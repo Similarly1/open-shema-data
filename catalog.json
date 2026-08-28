@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T13:40:00Z",
+  "updated_at": "2026-08-28T13:45:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -28,7 +28,8 @@
       "author": "Louis Segond",
       "description": "Bible Louis Segond 1910 avec numérotation Strong complète (Hébreu & Grec)",
       "features": ["strong", "indexed_search", "testaments_ot_nt"],
-      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite"
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/LSG.png"
     },
     {
       "id": "bible-darby",
@@ -44,7 +45,8 @@
       "author": "John Nelson Darby",
       "description": "Traduction littérale et rigoureuse de John Nelson Darby (66 livres, 31 171 versets) avec balisage Strong complet.",
       "features": ["strong", "indexed_search", "literal_translation"],
-      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite"
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/DARBY.png"
     },
     {
       "id": "dataset-bibleproject-fr",
