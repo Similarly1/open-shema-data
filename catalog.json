@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T13:45:00Z",
+  "updated_at": "2026-08-28T14:05:00Z",
   "categories": [
     { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
     { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
@@ -47,6 +47,23 @@
       "features": ["strong", "indexed_search", "literal_translation"],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/DARBY.png"
+    },
+    {
+      "id": "comm-calvin",
+      "type": "commentary",
+      "category": "commentaries",
+      "title": "Commentaire Biblique de Jean Calvin",
+      "abbreviation": "CBJC",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 38588416,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "Jean Calvin (Éd. Ch. Meyrueis / Dom. Public)",
+      "description": "Ensemble des commentaires exégétiques et doctrinaux de Jean Calvin sur le Nouveau et l'Ancien Testament (12 175 passages indexés sur 48 livres). Texte intégral du domaine public restauré, modernisé et structuré en Markdown thématique avec mise en valeur des citations et références scripturaires.",
+      "features": ["verse_by_verse", "structured_markdown", "scripture_crosslinks", "historical_reformed"],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/commentaires/comm_calvin.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/CBJC.png"
     },
     {
       "id": "dataset-bibleproject-fr",
