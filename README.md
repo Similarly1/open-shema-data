@@ -84,19 +84,9 @@ Consultez le dossier [`schemas/`](schemas/) pour les définitions SQL complètes
 
 ---
 
-## 🤝 Comment Contribuer ?
+## 🔒 Maintenance & Gouvernance
 
-Vous souhaitez ajouter un livre théologique, une traduction libre ou un dictionnaire ?
-
-1. Assurez-vous que l'ouvrage est strictement dans le **domaine public** ou sous une **licence ouverte (CC-BY, CC0)**.
-2. Structurez la base selon le schéma SQL adéquat dans [`schemas/`](schemas/).
-3. Placez le fichier dans le dossier correspondant sous `data/`.
-4. Ajoutez la fiche du module dans `catalog.json`.
-5. Lancez la validation locale :
-   ```bash
-   python scripts/validate_catalog.py
-   ```
-6. Ouvrez une **Pull Request**.
+Ce dépôt est exclusivement administré et alimenté par l'équipe **Open Shema**. Les ressources, traductions et ouvrages intégrés sont rigoureusement vérifiés, structurés et indexés par le mainteneur officiel avant publication dans le catalogue.
 
 ---
 
