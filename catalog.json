@@ -5,7 +5,7 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-09-01T08:49:21Z",
+  "updated_at": "2026-09-01T08:54:35Z",
   "categories": [
     {
       "id": "bibles",
@@ -228,6 +228,28 @@
       ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/theology/theologie_systematique_hodge.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/HODGE.png"
+    },
+    {
+      "id": "dict-vigouroux-1912",
+      "type": "dictionary",
+      "category": "dictionaries",
+      "title": "Dictionnaire de la Bible (F. Vigouroux)",
+      "abbreviation": "VIGOUROUX",
+      "language": "fr",
+      "format": "json",
+      "size_bytes": 36291096,
+      "version": "1.0.0",
+      "license": "Public Domain",
+      "author": "Fulgrence Vigouroux & Collaborateurs (1895–1912)",
+      "description": "Monument encyclopédique de l'érudition biblique en 5 tomes (8 312 articles). Couvre l'histoire, l'archéologie, la géographie, les langues originales et la théologie biblique. Texte restauré, nettoyé de ses artefacts d'OCR et balisé en JSON structuré.",
+      "features": [
+        "encyclopedic_articles",
+        "historical_archaeology",
+        "biblical_geography",
+        "complete_5_volumes"
+      ],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/dictionaries/vigouroux_dict.json",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/VIGOUROUX.png"
     }
   ]
 }
