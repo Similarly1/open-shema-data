@@ -5,13 +5,33 @@
   "description": "Catalogue officiel des ressources bibliques, théologiques, dictionnaires et jeux de données libres de droits pour l'écosystème Open Shema.",
   "repository": "https://github.com/Similarly1/open-shema-data",
   "cdn_base_url": "https://cdn.jsdelivr.net/gh/Similarly1/open-shema-data@main",
-  "updated_at": "2026-08-28T17:05:00Z",
+  "updated_at": "2026-09-01T08:49:21Z",
   "categories": [
-    { "id": "bibles", "label": "Textes & Versions Bibliques", "icon": "book-open" },
-    { "id": "dictionaries", "label": "Dictionnaires & Lexiques", "icon": "spell-check" },
-    { "id": "commentaries", "label": "Commentaires Bibliques", "icon": "message-square" },
-    { "id": "theology", "label": "Ouvrages de Théologie & Confessions", "icon": "library" },
-    { "id": "datasets", "label": "Jeux de Données & Multimédias", "icon": "database" }
+    {
+      "id": "bibles",
+      "label": "Textes & Versions Bibliques",
+      "icon": "book-open"
+    },
+    {
+      "id": "dictionaries",
+      "label": "Dictionnaires & Lexiques",
+      "icon": "spell-check"
+    },
+    {
+      "id": "commentaries",
+      "label": "Commentaires Bibliques",
+      "icon": "message-square"
+    },
+    {
+      "id": "theology",
+      "label": "Ouvrages de Théologie & Confessions",
+      "icon": "library"
+    },
+    {
+      "id": "datasets",
+      "label": "Jeux de Données & Multimédias",
+      "icon": "database"
+    }
   ],
   "modules": [
     {
@@ -27,7 +47,11 @@
       "license": "Public Domain",
       "author": "Louis Segond",
       "description": "Bible Louis Segond 1910 avec numérotation Strong complète (Hébreu & Grec)",
-      "features": ["strong", "indexed_search", "testaments_ot_nt"],
+      "features": [
+        "strong",
+        "indexed_search",
+        "testaments_ot_nt"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/LSG.png"
     },
@@ -44,7 +68,11 @@
       "license": "Public Domain",
       "author": "John Nelson Darby",
       "description": "Traduction littérale et rigoureuse de John Nelson Darby (66 livres, 31 171 versets) avec balisage Strong complet.",
-      "features": ["strong", "indexed_search", "literal_translation"],
+      "features": [
+        "strong",
+        "indexed_search",
+        "literal_translation"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/DARBY.png"
     },
@@ -61,7 +89,12 @@
       "license": "Public Domain",
       "author": "Jean-Frédéric Ostervald (Éd. La Maison de la Bible)",
       "description": "Révision historique (1877) de la traduction protestante classique de Jean-Frédéric Ostervald. Fidèle à la lignée du Texte Reçu (Textus Receptus) pour le Nouveau Testament et du Texte Massorétique pour l'Ancien Testament, dans une langue française soignée et traditionnelle du XIXᵉ siècle.",
-      "features": ["protestant_reformed", "textus_receptus", "historical_translation", "indexed_search"],
+      "features": [
+        "protestant_reformed",
+        "textus_receptus",
+        "historical_translation",
+        "indexed_search"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ostervald.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/OST.png"
     },
@@ -78,7 +111,12 @@
       "license": "Public Domain",
       "author": "Edmond Stapfer (Librairie Fischbacher)",
       "description": "Traduction historique du Nouveau Testament par le théologien protestant Edmond Stapfer (1889, Librairie Fischbacher). Traduit directement sur le texte grec comparé des meilleures éditions critiques de l'époque (Tischendorf, Westcott-Hort, Tregelles), offrant une langue soignée et une grande rigueur philologique.\n\nSource & formatage initial : Bible Parser (Didier Fontaine / Areopage.net). Intégration, restructuration et présentation UI : Open Shema.",
-      "features": ["new_testament", "greek_critical_text", "protestant_reformed", "indexed_search"],
+      "features": [
+        "new_testament",
+        "greek_critical_text",
+        "protestant_reformed",
+        "indexed_search"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_stapfer.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/STAPFER.png"
     },
@@ -95,7 +133,12 @@
       "license": "Public Domain",
       "author": "Pierre Giguet / Lethielleux",
       "description": "La première et magistrale traduction française intégrale de l'Ancien Testament d'après la version des Septante (texte grec d'Alexandrie) réalisée par Pierre Giguet en 4 tomes (1872).\n\nSource & formatage initial : Bible Parser (Didier Fontaine / Areopage.net). Intégration, restructuration et présentation UI : Open Shema.",
-      "features": ["old_testament", "septuagint_lxx", "alexandrian_greek", "indexed_search"],
+      "features": [
+        "old_testament",
+        "septuagint_lxx",
+        "alexandrian_greek",
+        "indexed_search"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_septante_giguet.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/GIG.png"
     },
@@ -112,7 +155,12 @@
       "license": "Creative Commons (CC-BY-SA 4.0)",
       "author": "Augustin Crampon (Révision Fraternité de Tibériade)",
       "description": "Révision linguistique et contemporaine de la traduction catholique intégrale (Ancien et Nouveau Testament) du Chanoine Augustin Crampon (1923) par la Fraternité de Tibériade. Traduction littérale et rigoureuse depuis l'hébreu et le grec, publiée sous licence ouverte Creative Commons (CC-BY-SA 4.0).",
-      "features": ["deuterocanonical", "catholic_tradition", "contemporary_french", "indexed_search"],
+      "features": [
+        "deuterocanonical",
+        "catholic_tradition",
+        "contemporary_french",
+        "indexed_search"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ncl.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/NCL.png"
     },
@@ -129,7 +177,12 @@
       "license": "Public Domain",
       "author": "Jean Calvin (Éd. Ch. Meyrueis / Dom. Public)",
       "description": "Ensemble des commentaires exégétiques et doctrinaux de Jean Calvin sur le Nouveau et l'Ancien Testament (12 175 passages indexés sur 48 livres). Texte intégral du domaine public restauré, modernisé et structuré en Markdown thématique avec mise en valeur des citations et références scripturaires.",
-      "features": ["verse_by_verse", "structured_markdown", "scripture_crosslinks", "historical_reformed"],
+      "features": [
+        "verse_by_verse",
+        "structured_markdown",
+        "scripture_crosslinks",
+        "historical_reformed"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/commentaires/comm_calvin.sqlite",
       "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/CBJC.png"
     },
@@ -146,8 +199,35 @@
       "license": "Creative Commons / BibleProject",
       "author": "BibleProject",
       "description": "Indexation complète des vidéos de panorama des 66 livres bibliques en français et liens HD vers les affiches littéraires.",
-      "features": ["video_links", "posters", "summaries"],
+      "features": [
+        "video_links",
+        "posters",
+        "summaries"
+      ],
       "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/bibleproject_fr.json"
+    },
+    {
+      "id": "theology-hodge-systematic",
+      "type": "theology",
+      "category": "theology",
+      "title": "Théologie Systématique (3 volumes)",
+      "abbreviation": "HODGE",
+      "language": "fr",
+      "format": "sqlite",
+      "size_bytes": 15544320,
+      "version": "1.0.0",
+      "license": "Public Domain (Traduction Moderne Open Shema)",
+      "author": "Charles Hodge (Séminaire de Princeton, 1871–1873)",
+      "description": "Monument de la théologie réformée du XIXe siècle (1871-1873) en 3 volumes complets : Prolégomènes & Théologie Propre (Vol. 1), Anthropologie & Sotériologie (Vol. 2), Sotériologie (suite) & Eschatologie (Vol. 3). Traduction moderne intégrale, 302 sections structurées et 2 796 notes de bas de page.",
+      "features": [
+        "systematic_theology",
+        "structured_markdown",
+        "reformed_dogmatics",
+        "footnotes_crosslinks",
+        "complete_3_volumes"
+      ],
+      "download_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/theology/theologie_systematique_hodge.sqlite",
+      "cover_url": "https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/HODGE.png"
     }
   ]
 }
