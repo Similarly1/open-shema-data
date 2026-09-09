@@ -1,15 +1,18 @@
-name: Validate Data Catalog
+﻿name: Validate Data Catalog
 
 on:
   push:
     paths:
       - 'catalog.json'
       - 'schemas/**'
-      - 'scripts/validate_catalog.py'
+      - 'scripts/**'
+      - 'README.md'
   pull_request:
     paths:
       - 'catalog.json'
       - 'schemas/**'
+      - 'scripts/**'
+      - 'README.md'
 
 jobs:
   validate:
@@ -25,3 +28,6 @@ jobs:
 
       - name: Run catalog validator
         run: python scripts/validate_catalog.py
+
+      - name: Verify README sync with catalog
+        run: python scripts/update_readme_catalog.py --check

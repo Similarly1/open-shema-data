@@ -38,12 +38,68 @@ open-shema-data/
 │
 ├── scripts/                         # 🛠️ Scripts d'automatisation & validation
 │   ├── validate_catalog.py          # Validation de l'intégrité du catalogue
+│   ├── update_readme_catalog.py     # Synchronisation automatique du README avec catalog.json
 │   └── update_data.py               # Synchronisation automatique YouTube / BibleProject
 │
 └── .github/workflows/               # 🤖 CI/CD automatisé
     ├── validate_catalog.yml         # Validation du catalogue à chaque PR / Push
     └── update_bibleproject_data.yml # Synchronisation hebdomadaire BibleProject
 ```
+
+---
+
+<!-- START_CATALOG -->
+
+## 📚 Ouvrages & Ressources Disponibles
+
+> 💡 Le catalogue compte actuellement **10 modules** prêts au téléchargement direct ou via l'API client.
+
+### 📖 Traductions Bibliques
+
+Traductions intégrales de l'Ancien et du Nouveau Testament avec indexation textuelle et codes Strong.
+
+| Couverture | Module | Code | Auteur / Éditeur | Format & Taille | Licence | Téléchargement |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/LSG.png" width="42" alt="LSG"> | **Louis Segond 1910 (avec Strongs)** | `LSG` | Louis Segond | SQLITE (20.1 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_lsg1910.sqlite) |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/DARBY.png" width="42" alt="DARBY"> | **Bible J.N. Darby (avec Strong)** | `DARBY` | John Nelson Darby | SQLITE (21.3 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_darby.sqlite) |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/OST.png" width="42" alt="OST"> | **Bible Ostervald** | `OST` | Jean-Frédéric Ostervald (Éd. La Maison de la Bible) | SQLITE (5.5 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ostervald.sqlite) |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/STAPFER.png" width="42" alt="STAPFER"> | **Le Nouveau Testament (Traduction Edmond Stapfer)** | `STAPFER` | Edmond Stapfer (Librairie Fischbacher) | SQLITE (1.4 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_stapfer.sqlite) |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/GIG.png" width="42" alt="GIG"> | **La Sainte Bible d'après les Septante** | `GIG` | Pierre Giguet / Lethielleux | SQLITE (4.0 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_septante_giguet.sqlite) |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/NCL.png" width="42" alt="NCL"> | **Sainte Bible néo-Crampon Libre** | `NCL` | Augustin Crampon (Révision Fraternité de Tibériade) | SQLITE (6.3 Mo) | Creative Commons (CC-BY-SA 4.0) | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/bibles/bible_ncl.sqlite) |
+
+### 💬 Commentaires Bibliques
+
+Commentaires verset par verset et analyses exégétiques structurées.
+
+| Couverture | Module | Code | Auteur / Éditeur | Format & Taille | Licence | Téléchargement |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/CBJC.png" width="42" alt="CBJC"> | **Commentaire Biblique de Jean Calvin** | `CBJC` | Jean Calvin (Éd. Ch. Meyrueis / Dom. Public) | SQLITE (36.8 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/commentaires/comm_calvin.sqlite) |
+
+### 🏛️ Théologie & Dogmatique
+
+Traités doctrinaux majeurs, théologies systématiques et confessions de foi historiques.
+
+| Couverture | Module | Code | Auteur / Éditeur | Format & Taille | Licence | Téléchargement |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/HODGE.png" width="42" alt="HODGE"> | **Théologie Systématique (3 volumes)** | `HODGE` | Charles Hodge (Séminaire de Princeton, 1871–1873) | SQLITE (14.8 Mo) | Public Domain (Traduction Moderne Open Shema) | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/theology/theologie_systematique_hodge.sqlite) |
+
+### 📚 Dictionnaires & Encyclopédies
+
+Lexiques originaux, dictionnaires bibliques encyclopédiques et définitions théologiques.
+
+| Couverture | Module | Code | Auteur / Éditeur | Format & Taille | Licence | Téléchargement |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/covers/VIGOUROUX.png" width="42" alt="VIGOUROUX"> | **Dictionnaire de la Bible (F. Vigouroux)** | `VIGOUROUX` | Fulgrence Vigouroux & Collaborateurs (1895–1912) | JSON (34.6 Mo) | Public Domain | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/data/dictionaries/vigouroux_dict.json) |
+
+### 🎨 Jeux de Données & Multimédia
+
+Données multimédias, liens vidéos, affiches HD et métadonnées complémentaires.
+
+| Couverture | Module | Code | Auteur / Éditeur | Format & Taille | Licence | Téléchargement |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: |
+| — | **BibleProject Français (Panoramas & Affiches)** | `BP-FR` | BibleProject | JSON (81 Ko) | Creative Commons / BibleProject | [⬇️ Télécharger](https://raw.githubusercontent.com/Similarly1/open-shema-data/main/bibleproject_fr.json) |
+
+<!-- END_CATALOG -->
 
 ---
 
